@@ -8,20 +8,10 @@
 </head>
 <body>
 
-	<form action="/JspBasic/resp">
-		나이: <input type="text" name="customerAge" maxlength="2"> <br>
-		<input type="submit" value="확인">
-	</form> 
+	<%
+		String s = null;
+		s.indexOf("메롱");
+	%>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-

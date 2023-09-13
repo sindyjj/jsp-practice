@@ -7,14 +7,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-//@Webservlet를 지정하면 따로 서블릿을 등록하고 url mapping하는 과정을 생략할 수 있습니다.
-@WebServlet("/resp")   // mapping 을 대신 해준다.
+//@WebServlet를 지정하면 따로 서블릿을 등록하고 url mapping하는 과정을 생략할 수 있습니다.
+@WebServlet("/resp")
 public class ResponseServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     public ResponseServlet() {
         super();
-      
     }
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -22,16 +21,26 @@ public class ResponseServlet extends HttpServlet {
 		System.out.println("service 메서드가 호출됨!");
 		
 		//요청과 함께 넘어온 아이디를 얻자
-		// getParameter(값) 값에 변수명을 제대로 입력하지 않으면 null이 옵니다 . 주의!!
+		//파라미터 변수명 제대로 입력 안하면 null이 옵니다.
 		int age = Integer.parseInt(request.getParameter("customerAge"));
 		
 		if(age >= 20) {
-			// 성인 페이지로 이동시키고 싶다.
-			response.sendRedirect("/JspBasic/response/res_aduit.jsp");
-		}else {
-			// 미성년자 페이지로 이동시키고 싶다.
-			response.sendRedirect("/JspBasic/response/res_child.jsp");
+			//성인 페이지로 이동시키고 싶어요.
+			response.sendRedirect("/JspBasic/response/res_adult.jsp");
+		} else {
+			//미성년자 페이지로 이동시키고 싶어요.
+			response.sendRedirect("/JspBasic/response/res_underage.jsp");
 		}
+		
 	}
 
 }
+
+
+
+
+
+
+
+
+

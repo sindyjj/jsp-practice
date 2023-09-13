@@ -8,20 +8,7 @@
 </head>
 <body>
 
-	<form action="/JspBasic/resp">
-		나이: <input type="text" name="customerAge" maxlength="2"> <br>
-		<input type="submit" value="확인">
-	</form> 
+	<a href="hello.jsp">404 에러 유발!!</a>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-

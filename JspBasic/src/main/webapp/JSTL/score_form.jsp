@@ -7,7 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>정재현 씨는 성인 그 잡채 입니다.</h2>
-	<p>주류 및 담배를 구입할 수 있습니다.</p>
+
+	<form action="jstl_choose_test.jsp">
+		# 점수를 입력하세요: 
+		<input type="text" name="point" size="5">점 <br>
+		<input type="submit" value="확인">
+	</form>
+
 </body>
 </html>

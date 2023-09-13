@@ -8,10 +8,11 @@
 </head>
 <body>
 
-	<form action="/JspBasic/basic" method="post">
-		# 아이디: <input type="text" name="account"> <br>
-		# 비밀번호: <input type="password" name="password"> <br>
+	<form action="/JspBasic/el/obj">
+		# 아이디: <input type="text" name="id"> <br>
+		# 비밀번호: <input type="password" name="pw"> <br>
 		# 이름: <input type="text" name="name"> <br>
+		# 이메일: <input type="text" name="email"> <br>
 		<input type="submit" value="확인">
 	</form>
 
