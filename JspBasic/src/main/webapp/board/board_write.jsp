@@ -12,7 +12,7 @@
 	<form action="/JspBasic/regist.board" method = "post">
 		<input type = "text" name = "writer" placeholder="작성자"> <br>
 		<input type = "text" name = "title" placeholder="글제목"> <br>
-		<textarea rows="5" cols="30" placeholder="게시글 내용을 입력하세요."></textarea>
+		<textarea name = "content" rows="5" cols="30" placeholder="게시글 내용을 입력하세요."></textarea>
 		<button type = "submit" onclick ="return confirm('등록하시겠습니까?')">등록</button> 
 		<%--form 안에 button은 타입 기본값이 submit이다. 
 		return confirm = 알람(확인 취소 가 있는데 확인을 눌러야 submit이 적용된다. --%>
